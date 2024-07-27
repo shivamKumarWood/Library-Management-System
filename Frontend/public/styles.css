@@ -1,0 +1,359 @@
+/* Navbar.css */
+html,body{
+ height: 100%;
+ max-width:100%;
+  margin: 0px;
+  padding: 0px;
+}
+* {
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+.App {
+  width:100%;
+  min-height: 100vh;
+  padding-top: 64px; 
+
+}
+
+/* Navbar CSS */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  transition: background-color 0.3s;
+  z-index: 1000;
+  margin-right:30px;
+  padding: 10px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.sticky-navbar {
+  background-color:rgb(244, 235, 235);
+  color: black;
+}
+
+.container-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:5px;
+  padding:5px;
+  width: 100%;
+}
+
+.navbar-brand {
+  flex: 1;
+}
+
+.navbar-brand h1 {
+  margin: 0;
+  padding:2px;
+  font-size: 24px;
+}
+
+.navbar-items {
+  display: flex;
+  align-items: center;
+  flex: 2;
+  justify-content: flex-end;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  display: flex;
+  margin: 1px;
+  padding: 1px;
+}
+
+.nav-item {
+  margin-left: 20px;
+  /* transition: transform 0.3s ease, font-weight 0.3s ease; */
+}
+
+.nav-item:hover  {
+  transform: scale(1.1);  /* Adjust the scale value as needed */
+  font-weight: bold;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+  padding: 10px 15px;
+  transition: color 0.3s;
+}
+
+
+.navbar-buttons {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+.btn {
+  padding: 10px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  border:0px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.btn:hover{
+  transform: scale(1.1);  /* Adjust the scale value as needed */
+  font-weight: bold;
+}
+
+.login-btn {
+  background-color: #007bff;
+  color: white;
+  border-radius: 16px;
+}
+
+.profile-btn {
+  background-color: rgb(173, 12, 141);
+  color: white;
+  border-radius: 16px;
+ 
+}
+
+ 
+/* Main content */
+.container-body{
+  margin-left:10px;
+  padding:4px;
+  display: flex;
+  justify-content: center;
+}
+.main-content {
+  flex: 1;
+  display: flex;
+}
+.body-head{
+  margin-top: 24px;
+  font-size: 48px;
+}
+.body-span{
+  font-size:48px;
+  color:red;
+}
+.body-para{
+  font-size: 18px;
+  padding:4px;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+}
+.body-para1{
+  font-size:18px;
+}
+.left, .right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+ 
+}
+
+.left {
+  margin-top: 60px;
+  margin-left: 40px;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.right {
+  padding:10px;
+  margin-right: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.library-btn{
+  background-color: black;
+  color:white;
+  border-radius: 8px;
+  font-size: 24px;
+  padding:8px;
+}
+.library-btn:hover{
+  transform: scale(1.1);  /* Adjust the scale value as needed */
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  background-color: #bdbabafe;
+  color: #333;
+  padding: 2rem 1rem;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  bottom: 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  margin-bottom:2px;
+}
+
+.footer-section h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.footer-section p {
+  margin: 0.2rem 0;
+}
+
+.about {
+  text-align: left;
+}
+
+.contact {
+  text-align: right;
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-weight: bold;
+}
+.footer-span{
+  font-weight: bold;
+}
+
+/*library section*/
+.library-heading{
+  text-align:center;
+  justify-content: center;
+  padding:4px;
+  margin:2px;
+}  
+.library-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four rows */
+  gap: 1rem; /* Adds gap between grid items */
+}
+/* Cards.css */
+
+/* Container for the card with margin and padding */
+.card-container {
+  margin:1.5rem;
+  padding: 0.2rem; 
+}
+
+/* Main card styling */
+.card {
+  background-color: #f3f4f6; 
+  width: 100%;
+  /* max-width: 24rem; */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05); 
+}
+
+/* Image styling */
+.card figure {
+  margin: 0; /* Remove default margin */
+  overflow: hidden; /* Hide any overflow */
+}
+.card-image {
+  width: 100%;
+  height: auto;
+  display:block;
+}
+
+/* Card body padding */
+.card-body {
+  padding: 1rem;
+}
+
+/* Card title styling */
+.card-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Badge styling */
+.badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.badge-secondary {
+  background-color: #ffed4a; /* Example color */
+  color: #000;
+}
+
+/* Card actions layout */
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+/* Badge outline styling */
+.badge-outline {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #000;
+  border-radius: 0.25rem;
+  background-color: transparent;
+}
+
+/* Buy Now button styling */
+.borrow-now {
+  padding: 0.5rem 1rem;
+  border: 2px solid #000;
+  border-radius: 9999px; /* Rounded-full */
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s; 
+}
+
+.borrow-now:hover {
+  background-color: #ec4899;
+  color: #fff; 
+}
+/* Dropdown.css */
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+select {
+  padding: 0.5rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+label {
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
