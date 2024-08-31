@@ -1,0 +1,1 @@
+This is a Libray Management System, where user must logged in first to view the books available in the digital library. After visiting the library user can borrow a book or can return the borrowed book. This project uses html, css, React for frontend and Nodejs, ExpressJs and javascript for backend. PostgreSql is used as a database management System.
