@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
-
+import Login from './Login';
+import Logout from "./Logout";
+import { useAuth } from '../context/AuthProvider';
 const Navbar = () => {
+  const [authUser, setAuthUser] = useAuth();
+  console.log(authUser);
   const [sticky, setSticky] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -11,9 +14,9 @@ const Navbar = () => {
         setSticky(false);
       }
     };
-    
+
     window.addEventListener('scroll', handleScroll);
-    
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -37,10 +40,13 @@ const Navbar = () => {
               <a href="/contact" className="nav-link">Contact Us</a>
             </li>
           </ul>
-          <div className="navbar-buttons">
-            <button className="btn login-btn">Login</button>
-            <button className="btn profile-btn">Profile</button>
-          </div>
+          {
+            authUser ? <Logout /> : <div className="navbar-buttons">
+
+              <a href='/login' className="btn login-btn">Login</a>
+            </div>
+          }
+
         </div>
       </div>
     </nav>

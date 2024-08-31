@@ -1,0 +1,28 @@
+{
+  "name": "librarymanagementsystem",
+  "version": "1.0.0",
+  "description": "project for library management system",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivamKumarWood/Library-Management-System.git"
+  },
+  "author": "Shivam Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shivamKumarWood/Library-Management-System/issues"
+  },
+  "homepage": "https://github.com/shivamKumarWood/Library-Management-System#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4",
+    "pg": "^8.12.0"
+  }
+}
